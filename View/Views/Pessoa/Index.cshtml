@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<button class="btn btn-primary" data-toggle="modal" data-target="#modal-pessoa">Nova Pessoa</button>
+
+<table id="pessoa-tabela" class="table table-hover table-bordered table-striped  ">
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>CPF</th>
+            <th>Ação</th>
+        </tr>
+    </thead>
+
+</table>
+@RenderPage("CadastroModal.cshtml")
+
+@section js{
+   <script src="~/Scripts/Pessoa/pessoa.js">
+    </script>
+    }

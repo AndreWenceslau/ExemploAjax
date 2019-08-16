@@ -1,0 +1,34 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Model
+{   [Table("produtos")]
+    public class Produto
+    {
+        [Column("id_venda")]
+        public int IdVenda {get; set;}
+
+        [ForeignKey("IdVenda")]
+        public Venda Venda { get; set; }
+
+        [Key, Column("id")]
+        public int id { get; set; }
+
+        [Column("nome")]
+        public string Nome { get; set; }
+
+        [Column("quantidade")]
+        public int Quantidade { get; set; }
+
+        [Column("valor")]
+        public decimal Valor { get; set; }
+
+        [Column("registro_ativo")]
+        public bool RegistroAtivo { get; set; }
+    }
+}

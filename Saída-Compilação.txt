@@ -1,0 +1,5 @@
+﻿1>------ Compilação iniciada: Projeto: Repository, Configuração: Debug Any CPU ------
+1>  Repository -> T:\Documentos\GitHub\ExemploAjax\Repository\bin\Debug\Repository.dll
+2>------ Compilação iniciada: Projeto: View, Configuração: Debug Any CPU ------
+2>  View -> T:\Documentos\GitHub\ExemploAjax\View\bin\View.dll
+========== Compilar: 2 com êxito, 0 com falha, 1 atualizados, 0 ignorados ==========
